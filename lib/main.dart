@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+
 import 'package:plant_shop/src/kernel/themes.dart';
 import 'package:plant_shop/src/presentation/pages/home.dart';
-
-import 'src/presentation/pages/detail.dart';
-import 'src/presentation/pages/login.dart';
 
 void main() => runApp(const MyApp());
 
