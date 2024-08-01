@@ -1,4 +1,4 @@
-# plant_shop
+# Plant Shop
 
 A plant shop project based on Flutter.
 
