@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:plant_shop/src/kernel/themes.dart';
+import 'package:plant_shop/src/kernel/painless.dart';
 
 class SummaryItem extends StatelessWidget {
   final String title, value;
+
   const SummaryItem({
     super.key,
     required this.title,
@@ -19,11 +20,12 @@ class SummaryItem extends StatelessWidget {
         children: [
           Text(
             title,
-            style: GoogleFonts.vazirmatn(fontSize: 14, color: kLapisLazuoli),
+            style: GoogleFonts.vazirmatn(
+              fontSize: 14,
+              color: AppColors.apisLazuoli,
+            ),
           ),
-          SizedBox(
-            height: 12,
-          ),
+          const SizedBox(height: 12),
           Container(
             width: 70,
             height: 60,

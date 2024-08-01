@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
-import 'package:plant_shop/src/kernel/themes.dart';
+
+import 'package:plant_shop/src/kernel/painless.dart';
 
 class SearchWidget extends StatelessWidget {
   const SearchWidget({
@@ -42,7 +44,7 @@ class SearchWidget extends StatelessWidget {
           ),
           prefixIcon: const Icon(
             IconlyLight.search,
-            color: kTeaGreen,
+            color: AppColors.teaGreen,
           ),
         ),
         style: GoogleFonts.vazirmatn(

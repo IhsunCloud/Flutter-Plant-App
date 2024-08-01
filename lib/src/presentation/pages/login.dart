@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:plant_shop/src/kernel/painless.dart';
 
 import 'package:plant_shop/src/presentation/pages/home.dart';
 
@@ -14,7 +15,7 @@ class LoginPage extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage('assets/images/background.jpg'),
+            image: AssetImage(AppImages.background),
           ),
         ),
         child: Padding(
@@ -24,7 +25,7 @@ class LoginPage extends StatelessWidget {
             children: [
               Center(
                 child: Text(
-                  'Flower Shop',
+                  AppTexts.appTitle,
                   style: GoogleFonts.yesteryear(
                     fontSize: 52,
                     color: Theme.of(context).colorScheme.onPrimaryContainer,

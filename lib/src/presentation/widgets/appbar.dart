@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:plant_shop/src/kernel/themes.dart';
+import 'package:plant_shop/src/kernel/painless.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar({
@@ -18,14 +18,16 @@ class MyAppBar extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Image.asset(
-            'assets/icons/menu-svgrepo-com-2.png',
-            color: kTeaGreen,
+            AppIcons.menuRepo,
+            color: AppColors.teaGreen,
             width: 40,
             height: 50,
           ),
           const Spacer(),
           const CircleAvatar(
-            foregroundImage: AssetImage('assets/images/profile.jpg'),
+            foregroundImage: AssetImage(
+              AppImages.profile,
+            ),
           ),
         ],
       ),

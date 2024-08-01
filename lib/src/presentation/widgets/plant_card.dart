@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:plant_shop/src/kernel/themes.dart';
+import 'package:plant_shop/src/kernel/painless.dart';
 
 class PlantCard extends StatelessWidget {
   final String image, title, price;
@@ -40,7 +40,7 @@ class PlantCard extends StatelessWidget {
           Text(
             title,
             style: GoogleFonts.vazirmatn(
-              color: kTeaGreen,
+              color: AppColors.teaGreen,
               fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
@@ -48,7 +48,7 @@ class PlantCard extends StatelessWidget {
           Text(
             price,
             style: GoogleFonts.vazirmatn(
-              color: kTeaGreenDark,
+              color: AppColors.teaGreenDark,
               fontSize: 18,
               fontWeight: FontWeight.w500,
             ),

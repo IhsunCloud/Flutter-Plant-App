@@ -1,9 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:plant_shop/src/kernel/themes.dart';
-import 'package:plant_shop/src/presentation/widgets/summary.dart';
+import 'package:plant_shop/src/kernel/painless.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({super.key});
@@ -41,7 +40,7 @@ class DetailPage extends StatelessWidget {
                         ],
                       ),
                       child: Image.asset(
-                        'assets/images/plant-7.png',
+                        AppImages.plant7,
                         height: 500,
                         width: 300,
                       ),
@@ -67,16 +66,16 @@ class DetailPage extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    'آگلونما',
+                    plants[0].title,
                     style: GoogleFonts.vazirmatn(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: kTeaGreen,
+                      color: AppColors.teaGreen,
                     ),
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'آگلونما یکی از مقاومترین و پر فایده ترین گیاهان آپارتمانی است که به دلیل نگهداری آسان و شکل ظاهری برگها، طرفداران زیادی دارد. یکی از مهمترین فواید این گیاه برای سلامتی انسان بر طبق تحقیقات نظریه هوای پاک ناسا، قدرت تصفیه هوای اتاق است.',
+                    plants[0].description,
                     textAlign: TextAlign.justify,
                     style: GoogleFonts.vazirmatn(
                         fontSize: 16,
@@ -87,19 +86,20 @@ class DetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
                   ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        minimumSize: Size(280, 60),
-                        backgroundColor: kTeaGreenDark,
-                        foregroundColor: Colors.white,
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(280, 60),
+                      backgroundColor: AppColors.teaGreenDark,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      AppTexts.addToBasket,
+                      style: GoogleFonts.vazirmatn(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
                       ),
-                      onPressed: () {},
-                      child: Text(
-                        'اضافه کردن به سبد خرید',
-                        style: GoogleFonts.vazirmatn(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      )),
+                    ),
+                  ),
                 ],
               ),
             ),
